@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>THONRNAMENT</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body id="corps">
+        
+        <script src="tab_aimant_sort.js"></script>
+        <script src="tab_ekip.js"></script>
+        <script src="tab_character.js"></script>
+        <script src="tab_challenge.js"></script>
+        <script src="Player.js"></script>
+        <script src="Deck.js"></script>
+        <script src="Cards.js"></script>
+        <script src="Game.js"></script>
+        <div id="plateau" style="background-color: rgb(161, 219, 150); width: 100%; height: 100%; border:black solid 2px">
+            <div id="shop" style="border:black solid 2px">SHOP</div>
+            <div id="deck" style="border:black solid 2px">DECK</div>
+            <div id="challenge" style="border:black solid 2px">CHALLENGE</div>
+            <div id="contract" style="border:black solid 2px">CONTRACT</div>
+            <div style="border:black solid 2px">PLAYERS
+                <div id="player1" style="border:black solid 2px">PLAYER1</div>
+                <div id="player2" style="border:black solid 2px">PLAYER2</div>
+            </div>
+            
+        </div>
+        <script>
+            Deck.import_deck();
+            Deck.shuffle();
+            //console.log(Deck.tab_cartes);
+        </script>
+
+    </body>
+</html>
