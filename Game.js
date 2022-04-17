@@ -9,7 +9,7 @@ class Game{
     }
 
     static creation_plateau(){
-
+        
     }
 }
 
@@ -19,6 +19,7 @@ class Player{
         this.etat = etat;
         this.deck=[];
         this.thon = new Thon();
+        this.coins = 0;
     }
 }
 
@@ -58,7 +59,7 @@ class Deck{
     }
 }
 class Contract{
-    
+
 }
 
 class Challenge{
