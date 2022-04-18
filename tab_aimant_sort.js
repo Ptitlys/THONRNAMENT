@@ -23,7 +23,7 @@ tab_aimant_sort = [
     {
         "id": "S4",
         "number":5,
-        "description": "Search in the deck for an Ekip from a set you already possess and shuffle.",
+        "description": "Take in the deck an Ekip from a set you already possess.",
         "achat": 15,
         "vente": 10,
     },
