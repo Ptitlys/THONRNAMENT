@@ -63,6 +63,7 @@ class Card{
 
         
         if(this.titre == "Sortiliège" || this.titre == "Aimant"){
+        
             var carte = document.createElement("div");
             
             var titre = document.createElement("h5");
@@ -82,9 +83,16 @@ class Card{
             carte.appendChild(image);
             carte.appendChild(description);
             carte.appendChild(prix);
+            console.log(this.titre.split(""));
+            if(this.titre.split("")[0] == "S"){
+                titre.style = "background-color:#5BC0EB";
+            }else{
+                titre.style = "background-color:#A6B1E1";
+            }
 
         }else{
             var row = document.createElement("div");
+            row.className = "gx-0";
             var carte = document.createElement("div");
             var titre = document.createElement("h5");
             var image = document.createElement("img");
@@ -92,6 +100,8 @@ class Card{
             var prix = document.createElement("p");
             var part = document.createElement("p");
             var type = document.createElement("p");//TODO: changer en image
+
+            titre.style="background-color:#C3423F"
     
             titre.textContent = this.titre;
             image.src = "images/lin.png";
@@ -117,9 +127,10 @@ class Card{
         }
         //si emplacement shop
         if(endroit.split("")[0] == "e"){
-            carte.style = "position:relative;  width:150px; height:210px; top:0; z-index:2; background-color:white; border:1px solid; transform: rotate(90deg)";
+            carte.style = "position:relative;  width:150px; height:220px; top:0; z-index:2; background-color:white; border:1px solid; transform: rotate(90deg)";
         }else{
-            carte.style = "position:relative;  width:150px; height:210px; top:0; z-index:2; background-color:white; border:1px solid";
+            carte.className += "col, gx-0"
+            carte.style = "position:relative;  width:150px; height:220px; top:0; z-index:2; background-color:white; border:1px solid";
         }
         carte.className+="col";
         carte.id = this.id;

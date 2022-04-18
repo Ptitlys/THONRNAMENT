@@ -1,22 +1,33 @@
 class Game{   
-    constructor(/*nom1,nom2*/){
-        var deck = new Deck();
-        Deck.shuffle();
-        var shop = new Shop();
-        shop.remplir_shop();
-        var pile = [];
-        var plateau = document.createElement("div");
+    constructor(nom1,nom2){
+        //creation plateau
+        var plateau = document.getElementById("plateau");
         plateau.id="plateau";
         plateau.style = "background-color: rgb(161, 219, 150); width: 100%; height: 100%; border:black solid 2px";
         plateau.class = "row";
-        var body = document.getElementById("corps");
-        body.appendChild(plateau);
+
+        var players = document.createElement("div");
+        players.id="players";
+        players.className = "col";
+
+        plateau.appendChild(players);
+
+        var deck = new Deck();
+        Deck.shuffle();
+
+        var shop = new Shop();
+        shop.remplir_shop();
+
+        var pile = [];
+
+        var player1 = new Player(nom1,1);
+        var player2 = new Player(nom2,2);
+       
+        
+
         //this.contract = new Contract();
         //this.challenge = new Challenge();
-        //this.player1 = new Player();
 
-       
-        //var joueurs = document.createElement("div");
     
     }
 
@@ -60,13 +71,37 @@ class Shop{
 
 class Player{
     constructor(name,etat){
+        var players = document.getElementById("players");
+
+        var player = document.createElement("div");
+        var main = document.createElement("div");
+        player.id = "player"+etat;
+        player.className = "row";
+        player.style = "border:black solid 2px; height:50%";
+        main.id="main"+etat;
+        main.className = "row";
+        
+        
+
         this.name=name;
         this.etat = etat;
-        this.deck=[];
+        this.main=[];
         this.thon = new Thon();
         this.coins = 0;
 
-        var player = document.createElement("div");
+        player.appendChild(main);
+        players.appendChild(player);
+        
+        this.remplir_main();
+        
+    }
+
+    remplir_main(){
+        for(var i = 0; i < 7; i++){
+            var carte = Deck.draw();
+            this.main.push(carte);
+            carte.afficher("main"+this.etat);
+        }
     }
 
 }
@@ -114,7 +149,6 @@ class Deck{
 
     static draw(){
         var carte = Deck.tab_deck.pop();
-        console.log( Deck.tab_deck.pop());
         return carte;
     }
 }
