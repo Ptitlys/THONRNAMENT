@@ -1,5 +1,5 @@
 import { getModelForClass, modelOptions, prop } from "@typegoose/typegoose";
-import { Buffer } from "buffer";
+import { ObjectId } from "mongodb";
 
 export enum CardTypes {
     SPELL = "SPELL",
@@ -9,7 +9,7 @@ export enum CardTypes {
     CHARACTER = "CHARACTER",
 }
 
-enum CardActions {
+export enum CardActions {
     TAKE = "TAKE",
     DESTROY = "DESTROY",
     ADD = "ADD",
@@ -18,14 +18,14 @@ enum CardActions {
     RENEW = "RENEW",
 }
 
-enum CardPlaces {
+export enum CardPlaces {
     DECK = "DECK",
     HAND = "HAND",
     DUMP = "DUMP",
     SHOP = "SHOP",
 }
 
-enum CardResources {
+export enum CardResources {
     COIN = "COIN",
     STRENGTH = "STRENGTH",
     TOUGHNESS = "TOUGHNESS",
@@ -33,12 +33,7 @@ enum CardResources {
     REWARD = "REWARD",
 }
 
-type CardAction = keyof typeof CardActions;
-type CardPlace = keyof typeof CardPlaces;
-type CardResource = keyof typeof CardResources;
-type CardType = keyof typeof CardTypes;
-
-class Effect {
+export class Effect {
     @prop({ required: true, enum: CardActions })
     action!: CardActions;
 
@@ -52,25 +47,36 @@ class Effect {
     value!: number;
 
     @prop()
-    target?: Card;
+    target?: ObjectId;
 }
 
 
 @modelOptions({schemaOptions: {discriminatorKey: 'type'}})
 export default abstract class Card {
     @prop({required:true, enum:CardTypes})
-    type!: CardType;
+    type!: CardTypes;
 
     @prop({required:true})
     description!: string;
 
-    @prop({required:true, type:Buffer})
-    picture!: Buffer;
+    @prop({ type:Buffer})
+    picture?: Buffer;
 
-    @prop({required:true, default: 1})
+    @prop({
+            required: true,
+            default: 1,
+            validate: (quantity: number) => quantity > 0,
+        })
     quantity!: number;
 
-    @prop({required:true, _id:false})
+    @prop({
+        required: true,
+        _id: false,
+        validate: {
+            validator: (quantity: number) => quantity > 0,
+            message: "Quantity must be greater than 0"
+        },
+    })
     effect!: Effect;
 }
 

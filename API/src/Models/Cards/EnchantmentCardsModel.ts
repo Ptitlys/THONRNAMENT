@@ -1,9 +1,9 @@
-import Cards, { CardsModel, CardTypes } from "../Objects/Cards";
-import Purchaseable from "../Interface/Purchaseable";
-import Sellable from "../Interface/Sellable";
+import Cards, { CardsModel, CardTypes } from "../../Objects/CardsObject";
+import PurchasableInterface from "../../Interface/Cards/PurchasableInterface";
+import SellableInterface from "../../Interface/Cards/SellableInterface";
 import { getModelForClass, prop } from "@typegoose/typegoose";
 
-class Enchantment extends Cards implements Sellable, Purchaseable {
+class Enchantment extends Cards implements SellableInterface, PurchasableInterface {
     @prop({ required: true })
     purchasePrice!: number;
     @prop({ required: true })

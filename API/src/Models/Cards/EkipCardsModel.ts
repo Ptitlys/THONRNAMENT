@@ -1,16 +1,16 @@
-import Cards, { CardsModel, CardTypes } from "../Objects/Cards";
+import Cards, { CardsModel, CardTypes } from "../../Objects/CardsObject";
 import { getModelForClass, prop } from "@typegoose/typegoose";
-import Purchaseable from "../Interface/Purchaseable";
-import Sellable from "../Interface/Sellable";
+import PurchasableInterface from "../../Interface/Cards/PurchasableInterface";
+import SellableInterface from "../../Interface/Cards/SellableInterface";
 
-enum EkipElements {
+export enum EkipElements {
     PLASTIC = "PLASTIC",
     FIRE = "FIRE",
     WATER = "WATER",
     ELECTRIC = "ELECTRIC",
 }
 
-enum EkipParts {
+export enum EkipParts {
     BODY = "BODY",
     HAT = "HAT",
     LEFT_LEG = "LEFT_LEG",
@@ -20,7 +20,7 @@ enum EkipParts {
     ACCESSORY = "ACCESSORY",
 }
 
-class Ekip extends Cards implements Purchaseable, Sellable{
+class Ekip extends Cards implements PurchasableInterface, SellableInterface{
     @prop({required:true, enum:EkipElements})
     element!: EkipElements;
 

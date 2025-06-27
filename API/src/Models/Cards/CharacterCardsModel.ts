@@ -1,4 +1,4 @@
-import Cards, { CardsModel, CardTypes } from "../Objects/Cards";
+import Cards, { CardsModel, CardTypes } from "../../Objects/CardsObject";
 import { getModelForClass, prop } from "@typegoose/typegoose";
 
 class Character extends Cards {

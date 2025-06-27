@@ -1,4 +1,4 @@
-import Cards, { CardsModel, CardTypes } from "../Objects/Cards";
+import Cards, { CardsModel, CardTypes } from "../../Objects/CardsObject";
 import { getModelForClass } from "@typegoose/typegoose";
 
 class Contract extends Cards {
