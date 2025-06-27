@@ -7,22 +7,22 @@ class Card{
             this.titre = "Sortiliège";
             this.id = tab["id"];
             this.description = tab["description"];
-            this.achat = tab["achat"];
-            this.vente = tab["vente"];
+            this.purchasePrice = tab["purchasePrice"];
+            this.salePrice = tab["salePrice"];
         //aimant
         }else if(tab["id"].split("")[0] == "A"){
             this.titre = "Aimant";
             this.id = tab["id"];
             this.description = tab["description"];
-            this.achat = tab["achat"];
-            this.vente = tab["vente"];
+            this.purchasePrice = tab["purchasePrice"];
+            this.salePrice = tab["salePrice"];
         //ekip
         }else{
             this.titre = "Ekip";
             this.id = tab["id"];
             this.description = tab["description"];
-            this.achat = tab["achat"];
-            this.vente = tab["vente"];
+            this.purchasePrice = tab["purchasePrice"];
+            this.salePrice = tab["salePrice"];
             this.type = tab["type"];
             this.part = tab["part"];
         }
@@ -77,7 +77,7 @@ class Card{
             image.src = "images/lin.png";
             image.style = "width:100px"
             description.textContent = this.description;
-            prix.textContent = this.achat + "/" + this.vente;
+            prix.textContent = this.purchasePrice + "/" + this.salePrice;
     
             carte.appendChild(titre);
             carte.appendChild(image);
@@ -107,7 +107,7 @@ class Card{
             image.src = "images/lin.png";
             image.style = "width:100px"
             description.textContent = this.description;
-            prix.textContent = this.achat + "/" + this.vente;
+            prix.textContent = this.purchasePrice + "/" + this.salePrice;
             part.textContent = this.part;
             type.textContent = this.type;
             type.className = "col";

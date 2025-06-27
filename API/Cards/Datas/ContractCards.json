@@ -1,0 +1,42 @@
+[
+    {
+        "description":"Got a Plastic Thon",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Got an Electric Thon",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Got a Fire Thon",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Got a Water Thon",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Thon's thoughness >= X",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Got >= X coins",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Thon's strength >= X",
+        "number":1,
+        "type":"CONTRACT"
+    },
+    {
+        "description":"Got X Ekip of the same set.",
+        "number":1,
+        "type":"CONTRACT"
+    }
+]

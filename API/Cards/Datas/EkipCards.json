@@ -1,0 +1,255 @@
+[
+    {
+        "description": "Marker cone",
+        "partType": "Plastic",
+        "number":1,
+        "part": "Body",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Folded traffic sign",
+        "partType": "Plastic",
+        "number":1,
+        "part": "Right_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Folded traffic sign",
+        "partType": "Plastic",
+        "number":1,
+        "part": "Left_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Party hat",
+        "partType": "Plastic",
+        "number":1,
+        "part": "Hat",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Neon Arm",
+        "partType": "Plastic",
+"number":1,
+        "part": "Right_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+"type":"EKIP"    },
+    {
+        "description": "Neon Arm",
+        "partType": "Plastic",
+
+"number":1,        "part": "Left_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+"type":"EKIP"    },
+    {
+        "description": "Anti-covid mask",
+        "partType": "Plastic",
+
+"number":1,        "part": "Accessory",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+"type":"EKIP"    },
+    {
+        "description": "Marcel",
+        "partType": "Fire",
+
+   "number":1,     "part": "Body",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Tourist cap",
+        "partType": "Fire",
+
+   "number":1,     "part": "Hat",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Sunglasses",
+        "partType": "Fire",
+
+   "number":1,     "part": "Accessory",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Sunburned arm",
+        "partType": "Fire",
+
+   "number":1,     "part": "Right_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Sunburned arm",
+        "partType": "Fire",
+
+   "number":1,     "part": "Left_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Crocs and high socks",
+        "partType": "Fire",
+
+   "number":1,     "part": "Left_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Crocs and high socks",
+        "partType": "Fire",
+
+   "number":1,     "part": "Right_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+   "type":"EKIP" },
+    {
+        "description": "Water bottle",
+        "partType": "Water",
+
+  "number":1,      "part": "Body",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Shark head",
+        "partType": "Water",
+
+  "number":1,      "part": "Hat",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Fin",
+        "partType": "Water",
+
+  "number":1,      "part": "Accessory",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Water gun",
+        "partType": "Water",
+
+  "number":1,      "part": "Right_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Water gun",
+        "partType": "Water",
+
+  "number":1,
+        "part": "Left_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Webbed foot",
+        "partType": "Water",
+
+  "number":1,      "part": "Left_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Webbed foot",
+        "partType": "Water",
+
+  "number":1,      "part": "Right_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+
+  "type":"EKIP"  },
+    {
+        "description": "Battery",
+        "partType": "Electric",
+        "number":1,
+        "part": "Body",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Antenna with power meter",
+        "partType": "Electric",
+        "number":1,
+        "part": "Hat",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Electronic bracelet",
+        "partType": "Electric",
+        "number":1,
+        "part": "Accessory",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Taser",
+        "partType": "Electric",
+        "number":1,
+        "part": "Right_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Taser",
+        "partType": "Electric",
+        "number":1,
+        "part": "Left_Arm",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Charging cable",
+        "partType": "Electric",
+        "number":1,
+        "part": "Left_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    },
+    {
+        "description": "Charging cable",
+        "partType": "Electric",
+        "number":1,
+        "part": "Right_Leg",
+        "purchasePrice": 20,
+        "salePrice": 15,
+        "type":"EKIP"
+    }
+]

@@ -1,0 +1,144 @@
+[
+    {
+        "type":"SPELL",
+        "number":3,
+        "description": "Take 1 card in the shop for free",
+        "purchasePrice": 30,
+        "salePrice": 25
+    },
+
+    {
+        "type":"SPELL",
+        "number":3,
+        "description": "Add +1 strength",
+        "purchasePrice": 10,
+        "salePrice": 5
+    },
+
+    {
+        "type":"SPELL",
+        "number":3,
+        "description": "Add +4 toughness",
+        "purchasePrice": 10,
+        "salePrice": 5
+    },
+    {
+        "type":"SPELL",
+        "number":5,
+        "description": "Take in the deck an Ekip from a set you already possess.",
+        "purchasePrice": 15,
+        "salePrice": 10
+    },
+    {
+        "type":"SPELL",
+        "description": "Renew the shop.",
+        "number":4,
+        "purchasePrice": 20,
+        "salePrice": 15
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 3 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 4 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 6 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 9 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 12 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Add + 15 coins",
+        "number":1,
+        "purchasePrice": 0,
+        "salePrice": 0
+    },
+    {
+        "type":"SPELL",
+        "description": "Destroy an aimant",
+        "number":2,
+        "purchasePrice": 40,
+        "salePrice": 35
+    },
+    {
+        "type":"AIMANT",
+        "description": "If you play no card during your turn, draw 2 cards",
+        "number":1,
+        "purchasePrice": 25,
+        "salePrice": 30
+    },
+    {
+        "type":"AIMANT",
+        "description": "Change the type of a THON",
+        "number":2,
+        "purchasePrice": 45,
+        "salePrice": 40
+    },
+    {
+        "type":"AIMANT",
+        "description": "Add + 1 coins each turn.",
+        "number":1,
+        "purchasePrice": 10,
+        "salePrice": 5
+    },
+    {
+        "type":"AIMANT",
+        "description": "Add + 2 coins each turn.",
+        "number":1,
+        "purchasePrice": 15,
+        "salePrice": 10
+    },
+    {
+        "type":"AIMANT",
+        "description": "Add + 3 coins each turn.",
+        "number":1,
+        "purchasePrice": 20,
+        "salePrice": 15
+    },
+    {
+        "type":"AIMANT",
+        "description": "Add + 4 coins each turn.",
+        "number":1,
+        "purchasePrice": 25,
+        "salePrice": 20
+    },
+    {
+        "type":"AIMANT",
+        "description": "Add + 5 coins each turn.",
+        "number":1,
+        "purchasePrice": 30,
+        "salePrice": 25
+    },
+    {
+        "type":"AIMANT",
+        "description": "Draw 1 more card each turn",
+        "number":1,
+        "purchasePrice": 35,
+        "salePrice": 30
+    }
+]
