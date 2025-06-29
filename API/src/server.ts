@@ -1,9 +1,8 @@
 import dotenv from "dotenv";
-import { connectDB } from "./database";
+import { connectDB } from "./Config/database";
 import express from 'express';
 import cors from 'cors';
-import DTOValidatorMiddleware from "./Middlewares/DTOValidatorMiddleware";
-import CardsRoute from "./Routes/CardsRoute";
+import CardsRoute from "./Cards/CardsRouter";
 
 
 export var app = express();
@@ -22,3 +21,7 @@ app.use(
 app.use("/api/cards", CardsRoute);
 
 connectDB();
+
+app.listen(process.env.PORT, () => {
+    console.log(`Serveur lancé sur le port ${process.env.PORT}`);
+});
